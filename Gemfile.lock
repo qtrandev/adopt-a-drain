@@ -87,7 +87,7 @@ GEM
     multi_json (1.10.1)
     multi_xml (0.5.3)
     nested_form (0.3.1)
-    newrelic_rpm (3.5.5.38)
+    newrelic_rpm (3.13.2.302)
     nokogiri (1.5.6)
     orm_adapter (0.4.0)
     pg (0.18.3)
