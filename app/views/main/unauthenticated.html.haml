@@ -4,16 +4,12 @@
       %h2
         %br
         Adopt a Drain
-      %h5
-        Part of the 
-        %a{:href => 'http://www.oaklandadoptaspot.org'}Oakland Adopt a Spot
-        Program
       %p.alert-message.block-message#tagline
         = t("defaults.tagline")
       #content
         = render :partial => "sidebar/combo_form"
       #logos
-        %a{:href => "http://openoakland.org/"}
-          = image_tag "logos/openoakland.png", :width => '180px', :alt => t("sponsors.cfa"), :title => t("sponsors.cfa")
+        %a{:href => "http://codeforftl.org/"}
+          = image_tag "https://avatars1.githubusercontent.com/u/5661283", :width => '180px', :alt => t("sponsors.cfa"), :title => t("sponsors.cfa")
     .table-cell#map
       &nbsp;

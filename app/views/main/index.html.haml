@@ -1,13 +1,10 @@
 .table
   .table-row
     .table-cell.sidebar
-      %a{:href => "http://www2.oaklandnet.com/"}
-        = image_tag "logos/citytree_green_small.jpg", :style => "margin-top:10px", :width => '90px', :alt => t("sponsors.city"), :title => t("sponsors.city")    
+      %a{:href => "http://www.fortlauderdale.gov"}
+        = image_tag "https://s3.amazonaws.com/delphius-rds-1/entities/logos/000/000/123/header_image/Fort_Lauderdale.png", :style => "margin-top:10px", :width => '200px', :alt => t("sponsors.city"), :title => t("sponsors.city")    
       %h1
         Adopt a Drain
-      %h4
-        Part of 
-        %a{:href => 'http://www.oaklandadoptaspot.org'}Oakland Adopt a Spot
 
       %p.alert-message.block-message#tagline
         = t("defaults.tagline")
@@ -18,8 +15,8 @@
         - else
           = render :partial => "sidebar/combo_form"
       #logos
-        %a{:href => "http://openoakland.org/"}
-          = image_tag "logos/openoakland.png", :width => '180px', :alt => t("sponsors.cfa"), :title => t("sponsors.cfa")
+        %a{:href => "http://codeforftl.org"}
+          = image_tag "https://avatars1.githubusercontent.com/u/5661283", :width => '180px', :alt => t("sponsors.cfa"), :title => t("sponsors.cfa")
 
       #feedback
         %br
@@ -27,11 +24,11 @@
         %br
         %p
           Report maintenance needs to the 
-          %a{:href => URI.escape("http://www2.oaklandnet.com/Government/o/PWA/Connect/ReportaProblem/index.htm")} City of Oakland Public Works Agency
+          %a{:href => URI.escape("http://www.fortlauderdale.gov/departments/city-manager-s-office/public-affairs-office/lauderserv")} City of Fort Lauderdale Public Works Department
           or visit
-          %a{:href => "http://www.seeclickfix.com/oakland"}www.seeclickfix.com/oakland
+          %a{:href => "http://www.fortlauderdale.gov/departments/city-manager-s-office/public-affairs-office/lauderserv"}Lauderserv
         %p{:style => "font-size: 120%"}
-          %a{:href => URI.escape("mailto:pboylerodriguez@oaklandnet.com?subject=#{t("titles.main", :thing => t("defaults.thing").titleize)} #{t("links.feedback").titleize}")}
+          %a{:href => URI.escape("mailto:codeforftl@gmail.com?subject=#{t("titles.main", :thing => t("defaults.thing").titleize)} #{t("links.feedback").titleize}")}
             = t("links.feedback")
     .table-cell.map-container
       #map        
